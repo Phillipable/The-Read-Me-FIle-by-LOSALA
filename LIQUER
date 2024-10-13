@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   
+    
+    double totalBill = 0.0;
+    double liqour = 0.0;
+    double tipPercent = 0.0;
+    double totalNoLiqour = 0.0;
+    double tip = 0.0;
+    
+    std::cout << "Enter Total Bill: ";
+    cin >> totalBill;
+    std::cout << "Enter Liqour Charge: ";
+    cin >> liqour;
+    std::cout << "Enter Tip Percentage: " ;
+    cin >> tipPercent;
+    
+    totalNoLiqour = totalBill - liqour;
+    tip = totalNoLiqour * tipPercent;
+  
+  
+    cout << "this is your total bill: " << totalBill <<endl;  
+    cout << "this is your liqour charge:" << liqour <<endl; 
+    cout << "this is your tip percent: " << tipPercent <<endl; 
+    cout << " Display the Tip:" << tip <<endl;
+    return 0;
+}
